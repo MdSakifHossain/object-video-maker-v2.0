@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Item Maker</title>
+  </head>
+  <body>
+    <div class="heading">
+      <h1 id="afterReset" >Object: Video</h1>
+    </div>
+    
+    <div class="app">
+
+      <!-- start -->
+      <div class="container">
+        <div class="title">ID:</div>
+        <div class="input-container">
+          <input
+            type="number"
+            class="input-taker"
+            placeholder="id"
+            id="id" 
+          />
+        </div>
+      </div>
+      <!-- end -->
+      
+      <!-- start -->
+      <div class="container">
+        <div class="title">YouTube link:</div>
+        <div class="input-container">
+          <input
+            type="text"
+            class="input-taker" 
+            placeholder="link"
+            id="videoLink" 
+          />
+        </div>
+      </div>
+      <!-- end -->
+      
+      <!-- start -->
+      <div class="container">
+        <div class="title">Title:</div>
+        <div class="input-container">
+          <input
+            type="text"
+            class="input-taker"
+            placeholder="Title"
+            id="title" 
+          />
+        </div>
+      </div>
+      <!-- end -->
+      
+      <div class="title">Published on:</div>
+      
+      <!-- start -->
+      <div class="uploaded" >
+      
+		<div class="months m0">
+          <a href="#jul" id="jan" >jan</a>
+          <a href="#jul" id="feb" >feb</a>
+          <a href="#jul" id="mar" >mar</a>
+          <a href="#jul" id="apr" >apr</a>
+          <a href="#jul" id="may" >may</a>
+          <a href="#jul" id="jun" >jun</a>
+          <a href="#jul" id="jul" >jul</a>
+          <a href="#jul" id="aug" >aug</a>
+          <a href="#jul" id="sep" >sep</a>
+          <a href="#jul" id="oct" >oct</a>
+          <a href="#jul" id="nov" >nov</a>
+          <a href="#jul" id="dec" >dec</a>
+        </div>
+<!-- start -->
+<div class="container m0">
+  <div class="input-container">
+    <input
+      type="text"
+      class="input-taker"
+      placeholder="Month"
+      readonly="readonly"
+      id="month" 
+    />
+  </div>
+</div>
+<!-- end -->
+
+        <div class="dates">
+<!-- start -->
+<div class="container m0">
+  <!--
+  <div class="title">Date:</div>-->
+  <div class="input-container">
+    <input
+      type="number"
+      class="input-taker"
+      placeholder="Date"
+      id="date" 
+    />
+  </div>
+</div>
+<!-- end -->
+        </div>
+<!-- start -->
+<div class="container m0">
+  <!--
+  <div class="title">Year:</div>-->
+  <div class="input-container">
+    <input
+      type="number"
+      class="input-taker"
+      placeholder="Year"
+      readonly="readonly" 
+      id="year" 
+    />
+  </div>
+</div>
+<!-- end -->
+
+        <div class="years m0">
+          <button id="tk19" >2019</button>
+          <button id="tk20" >2020</button>
+          <button id="tk21" >2021</button>
+          <button id="tk22" >2022</button>
+          <button id="tk23" >2023</button>
+        </div>
+      </div>
+      <!-- end -->
+      <!-- 5th div -->
+      <!-- 🔥🔥🔥reseting area🔥🔥🔥 -->
+      <div class="reset-div">
+        <a href="#afterReset" onclick="reset()" class="reset-button" >
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-bootstrap-reboot" viewBox="0 0 16 16"><path d="M1.161 8a6.84 6.84 0 1 0 6.842-6.84.58.58 0 1 1 0-1.16 8 8 0 1 1-6.556 3.412l-.663-.577a.58.58 0 0 1 .227-.997l2.52-.69a.58.58 0 0 1 .728.633l-.332 2.592a.58.58 0 0 1-.956.364l-.643-.56A6.812 6.812 0 0 0 1.16 8z" /></svg>
+          Reset
+        </a>
+        <a onclick="generate()" href="#output" > Generate </a>
+      </div>
+    <!-- .app ending -->
+    </div>
+    
+    
+    
+    <div class="output-section">
+      <button id="cpBtn"> copy </button>
+      <div id="output" class="output">
+        <span class="key">"id"</span>: , <br>
+        <span class="key">"link"</span>: <span class="value">""</span>, <br>
+        <span class="key">"title"</span>: <span class="value">""</span>, <br>
+        <span class="key">"published"</span>: <span class="value">""</span>, <br>
+        <span class="key">"games"</span>: <span class="value">[]</span>
+      </div>
+    </div>
+    
+    
+    <script src="app.js"></script>
+  </body>
+</html>
